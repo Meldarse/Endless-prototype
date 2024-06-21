@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0om62wloowfi"]
+
+[ext_resource type="PackedScene" uid="uid://dwvk8fdwpopi3" path="res://Assets/columnLarge.glb" id="1_3ojp6"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_072gc"]
+size = Vector2(100, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b0w2v"]
+size = Vector3(0.311294, 1.23291, 0.362682)
+
+[node name="Terrain_0" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_072gc")
+
+[node name="columnLarge" parent="." instance=ExtResource("1_3ojp6")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -9.03508, 0, -5.43445)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="columnLarge"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.638573, 0)
+shape = SubResource("BoxShape3D_b0w2v")
+
+[node name="columnLarge2" parent="." instance=ExtResource("1_3ojp6")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.6257, 0, 2.31546)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="columnLarge2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.638573, 0)
+shape = SubResource("BoxShape3D_b0w2v")
+
+[node name="columnLarge3" parent="." instance=ExtResource("1_3ojp6")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 3.21295, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="columnLarge3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.638573, 0)
+shape = SubResource("BoxShape3D_b0w2v")
