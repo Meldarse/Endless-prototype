@@ -63,7 +63,7 @@ _data = {
 [node name="tetrahedron" type="Node3D" parent="."]
 
 [node name="Cube" type="MeshInstance3D" parent="tetrahedron"]
-transform = Transform3D(-0.691133, 0.414253, 0.592224, 0.180044, -0.69491, 0.696193, 0.699942, 0.587789, 0.405691, 0, 1, 0)
+transform = Transform3D(-0.819152, -0.40558, -0.40558, 3.57628e-07, 0.707107, -0.707107, 0.573576, -0.579229, -0.579228, 0, 1, 0)
 mesh = SubResource("ArrayMesh_hxmfs")
 skeleton = NodePath("")
 
@@ -72,7 +72,6 @@ transform = Transform3D(-0.293004, 1.80299e-07, 0.465437, -0.465437, -6.55632e-0
 
 [node name="Sun" type="DirectionalLight3D" parent="tetrahedron"]
 transform = Transform3D(1, 0, 0, 0, -0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 4.14167, -4)
-light_color = Color(1, 1, 1, 1)
 light_energy = 6830.0
 
 [node name="Camera" type="Camera3D" parent="tetrahedron"]
